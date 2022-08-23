@@ -1,2 +1,7 @@
 # train_nodejs
-train_nodejs_express_express_mongodb
+my first node js 
+  web stock 
+- NodeJS
+- Express
+- EJS 
+- Mongo & mongoose

@@ -37,8 +37,9 @@ router.get('/manage',(req,res)=>{
 })
 
 //Insert product
-router.get('/insert',(req,res)=>{
-    console.log(req.query.name)
+router.post('/insert',(req,res)=>{
+    console.log(req.body.name);
+    res.render('form');
 })
 
 

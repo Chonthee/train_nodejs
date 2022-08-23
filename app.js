@@ -5,6 +5,7 @@ const app = express()
 
 app.set('views',path.join(__dirname,'views')) // file location
 app.set('view engine','ejs') // setting template engine
+app.use(express.urlencoded({extende:false}))
 app.use(router)
 
 //goto index html only

@@ -1,10 +1,13 @@
 const express = require('express')
 const path = require('path')
 const router=require('./routes/myRouter')
+const mongoose = require('mongoose')
 const app = express()
 
 app.set('views',path.join(__dirname,'views')) // file location
 app.set('view engine','ejs') // setting template engine
+app.use(express.urlencoded({extende:false}))
+
 app.use(router)
 
 //goto index html only

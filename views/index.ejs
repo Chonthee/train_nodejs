@@ -13,17 +13,16 @@
     <body>
         <%- include('navbar') %>
         <div class="container">
-
             <div class="row my-3">
                 <% Object.values(products).forEach(function(item){ %>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100">
-                        <a href="product1.html"><img class="card-img-top" src="/images/products/<%= item.image %>" alt="" /></a>
+                        <a href="/<% item._id %>"><img class="card-img-top" src="/images/products/<%=item.image %>" alt="" /></a>
                         <div class="card-body">
                             <h4 class="card-title">
-                                <a href="product1.html">Product : <%= item.name %></a>
+                                <a href="/<%= item._id %>">Product : <%= item.name %></a>
                             </h4>
-                            <h5>Price : <%= item.price %> Baht.</h5>
+                            <h5> Price : <%= item.price %> Baht.</h5>
                             <p class="card-text"><%= item.description %></p>
                         </div>
                     </div>
